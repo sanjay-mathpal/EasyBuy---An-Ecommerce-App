@@ -18,7 +18,7 @@ const app = express();
 
 // middleware
 app.use(cors({
-    origin: ["https://easy-buy-an-ecommerce-app-frontend.vercel.app"],
+    origin: ["https://easy-buy-an-ecommerce-app-frontend-onenyv5he.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
