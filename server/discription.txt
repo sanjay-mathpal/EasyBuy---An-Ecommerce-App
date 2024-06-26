@@ -1,0 +1,6 @@
+morgan -> is used to show the api requests which gets hit
+findOne -> used to find one document or user in this case
+JWT -> is used to create the tokens and helps in not showing the routes pages in which routes token does not match
+Middleware -> Middleware helps you with logging, error reporting, making asynchronous requests, and a whole lot more
+helmet -> to acheive SEO (search engine optimization)
+axios -> used to get,post,etc. in backend

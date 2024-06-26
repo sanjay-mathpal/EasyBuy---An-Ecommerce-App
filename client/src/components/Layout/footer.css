@@ -1,0 +1,16 @@
+@media (max-width: 1024px) {
+    .footer{
+        font-size: 15px;
+    }
+    .footer h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px) {
+    .footer{
+        font-size: 10px;
+    }
+    .footer h1{
+        font-size: 15px;
+    }
+}
