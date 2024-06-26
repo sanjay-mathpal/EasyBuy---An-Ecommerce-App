@@ -17,7 +17,10 @@ connectDB();
 const app = express();
 
 // middleware
-app.use(cors());
+app.use(cors({
+    origin: ['https://easy-buy-an-ecommerce-app-frontend-4qm65symz.vercel.app', 'http://localhost:8080'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
 app.use(express.json());
 app.use(morgan('dev'));
 
@@ -27,12 +30,12 @@ app.use('/api/v1/category', categoryRoutes);
 app.use('/api/v1/product', productRoutes);
 
 // rest api
-app.get('/',(req,res) => {
+app.get('/', (req, res) => {
     res.send("<h1>Welcome</h1>")
 })
 
 // PORT 
-const PORT = process.env.PORT || 8080 ;
+const PORT = process.env.PORT || 8080;
 
 // run or listen
 app.listen(PORT, () => {
