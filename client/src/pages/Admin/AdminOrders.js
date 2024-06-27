@@ -102,7 +102,7 @@ const AdminOrders = () => {
                           <div className="row mb-2 p-3 card flex-row" key={p._id}>
                             <div className="col-md-4 col-12 d-flex justify-content-center align-items-center">
                               <img
-                                src={`/api/v1/product/product-photo/${p._id}`}
+                                src={`${process.env.REACT_APP_API}/api/v1/product/product-photo/${p._id}`}
                                 className="card-img-top"
                                 alt={p.name}
                                 style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }}
